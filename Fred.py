@@ -57,7 +57,7 @@ class Monster:
     def set_def_points(self, points):
         self.defense_points = points
 
-    def greet():
+    def greet(self):
         print("ROOOOOOAARR!!!")
 
 
@@ -162,9 +162,9 @@ while True:
     else:  # Monster Subjugation
         new_monster = Monster('Arachnee', 'Spider')
         print()
-        print(f"Ha aparecido un {new_monster.name}!")
-        print()
         new_monster.greet()
+        print()
+        print(f"Ha aparecido un {new_monster.name}!")
         print()
         has_run = False
         while new_monster.health > 0 or has_run:
