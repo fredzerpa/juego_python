@@ -5,7 +5,11 @@
     <option name="CUSTOM_SCOPE_NAME" value="Current File" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fadd5f1-f0b0-4235-aab7-5b4c32521a7a" name="Default Changelist" comment="" />
+    <list default="true" id="4fadd5f1-f0b0-4235-aab7-5b4c32521a7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fred.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +22,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YR381ONrpGFd1HCYOKI7fo5H47" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,6 +33,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="D:/" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -35,7 +43,7 @@
       <recent name="D:\" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Fred">
     <configuration name="Fred" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="examen-fred" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -57,9 +65,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="examen-fred" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Fred" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -77,10 +107,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Inspections" timestamp="1582934786206">
+    <state x="552" y="178" key="#Inspections" timestamp="1582955911042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1582934786206" />
+    <state x="552" y="178" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1582955911042" />
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582951750750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -89,35 +119,35 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="464" y="112" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1582898698730" />
-    <state width="1921" height="984" key="GridCell.Tab.0.bottom" timestamp="1582951863320">
+    <state width="1921" height="984" key="GridCell.Tab.0.bottom" timestamp="1582957155519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1366" height="688" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1582898736451" />
-    <state width="1921" height="984" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582951863320" />
-    <state width="1921" height="984" key="GridCell.Tab.0.center" timestamp="1582951863320">
+    <state width="1921" height="984" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582957155519" />
+    <state width="1921" height="984" key="GridCell.Tab.0.center" timestamp="1582957155519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1366" height="688" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1582898736451" />
-    <state width="1921" height="984" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582951863320" />
-    <state width="1921" height="984" key="GridCell.Tab.0.left" timestamp="1582951863320">
+    <state width="1921" height="984" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582957155519" />
+    <state width="1921" height="984" key="GridCell.Tab.0.left" timestamp="1582957155519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1366" height="688" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1582898736451" />
-    <state width="1921" height="984" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582951863320" />
-    <state width="1921" height="984" key="GridCell.Tab.0.right" timestamp="1582951863320">
+    <state width="1921" height="984" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582957155519" />
+    <state width="1921" height="984" key="GridCell.Tab.0.right" timestamp="1582957155519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1366" height="688" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1582898736451" />
-    <state width="1921" height="984" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582951863320" />
+    <state width="1921" height="984" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582957155519" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1582929588744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582929588744" />
-    <state x="543" y="273" key="com.intellij.ide.util.TipDialog" timestamp="1582951708202">
+    <state x="543" y="273" key="com.intellij.ide.util.TipDialog" timestamp="1582954533503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="386" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1582898884360" />
-    <state x="543" y="273" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582951708202" />
+    <state x="543" y="273" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582954533503" />
     <state x="130" y="0" width="606" height="738" key="find.popup" timestamp="1582897944836">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

@@ -32,8 +32,10 @@ class Character:
         print('HP: ', self.health)
         print('Ataque: ', self.attack_points)
         print('Defensa: ', self.defense_points)
+        show_skills = "Habilidades: "
         for skill in self.skills:
-            print('Habilidades: ', skill)
+            show_skills += f" {skill['name']} ({skill['damage_points']})"
+        print(show_skills)
         print()
 
 
@@ -98,17 +100,17 @@ def new_character(class_creation):
     if race == "Guerrero":
         char = class_creation(name, sex, race)
         char.set_skills(
-            {'nombre': 'Corte', 'daño': 12}
+            {'name': 'Corte', 'damage_points': 12}
         )
     elif race == "Mago":
         char = class_creation(name, sex, race, 80, 15, 2)
         char.set_skills(
-            {'nombre': 'Bola de fuego', 'daño': 18}
+            {'name': 'Bola de fuego', 'damage_points': 18}
         )
     else:
         char = class_creation(name, sex, race, 90, 12, 4)
         char.set_skills(
-            {'nombre': 'Flecha afilada', 'daño': 15}
+            {'name': 'Flecha afilada', 'damage_points': 15}
         )
 
     return char
@@ -135,18 +137,36 @@ def att_and_run_menu():
     while not is_valid:
         print("Escoja una accion para continuar:")
         print(" 1.  Atacar.")
-        print(" 2.  Escapar.")
+        print(" 2.  Habilidades.")
+        print(" 3.  Escapar.")
         op = input("Accion: ")
-        if valid_option_between_nums(int(op), [1, 3]):
-            is_valid = True
+        if valid_option_between_nums(int(op), [1, 4]):
+            # is_valid = True
             return int(op)
         else:
-            print("\"Escoja una opcion valida [1 2]\"")
+            print("\"Escoja una opcion valida [1 2 3]\"")
+
+
+def select_skill(skills):
+    for skill in skills:
+        is_valid = False
+        while not is_valid:
+            print("Escoja una accion para continuar:")
+            for data in skill.values():
+                print(f" 1.  {data}.")
+                print(" 2.  Regresar.")
+                op = input("Accion: ")
+                if valid_option_between_nums(int(op), [1, 2]):
+                    is_valid = True
+                    return int(op)
+                else:
+                    print("\"Escoja una opcion valida [1]\"")
 
 
 def damage_dealt(attack_points, defense_points):
     damage = (attack_points - defense_points) if attack_points > defense_points else 0
     return damage
+
 
 print()
 print("Bienvenido a una Nueva Aventura!")
@@ -167,7 +187,7 @@ while True:
         print(f"Ha aparecido un {new_monster.name}!")
         print()
         has_run = False
-        while new_monster.health > 0 or has_run:
+        while new_monster.health > 0 and not has_run:
             selected_action = att_and_run_menu()
             print()
             if selected_action == 1:
@@ -184,11 +204,33 @@ while True:
                       f"{damage_points} de Vida."
                       f"\n  {adventurer.name} => HP: {adventurer.health}")
                 print()
+
+            elif selected_action == 2:
+                selected_skill = select_skill(adventurer.skills)
+                print()
+                skill_damage = adventurer.skills[selected_skill - 1]['damage_points']
+                damage_points = damage_dealt(skill_damage, new_monster.defense_points)
+                hp_left = new_monster.health - damage_points
+                new_monster.set_health_points(hp_left)
+                print(f"Has realizado {damage_points} de daño al monstruo! "
+                      f"\n   {new_monster.name} => HP: {new_monster.health}")
+                print()
+                damage_points = damage_dealt(new_monster.attack_points, adventurer.defense_points)
+                hp_left = adventurer.health - damage_points
+                adventurer.set_health_points(hp_left)
+                print(f"{new_monster.name} te ha atacado! Te ha quitado "
+                      f"{damage_points} de Vida."
+                      f"\n  {adventurer.name} => HP: {adventurer.health}")
+                print()
+
             else:
                 has_run = True
 
         if new_monster.health <= 0 and not has_run:
             print(f"Has logrado matar a {new_monster.name} de la raza {new_monster.race} eres un Heroe!")
+            print()
             input("Presiona ENTER para continuar")
+            print()
         if has_run:
             print(f"Has huido exitosamente, descansa para tu proxima aventura!")
+            print()
