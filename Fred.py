@@ -207,7 +207,6 @@ while True:
 
             elif selected_action == 2:
                 selected_skill = select_skill(adventurer.skills)
-                print()
                 skill_damage = adventurer.skills[selected_skill - 1]['damage_points']
                 damage_points = damage_dealt(skill_damage, new_monster.defense_points)
                 hp_left = new_monster.health - damage_points
