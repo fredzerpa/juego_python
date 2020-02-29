@@ -164,6 +164,8 @@ while True:
         print()
         print(f"Ha aparecido un {new_monster.name}!")
         print()
+        new_monster.greet()
+        print()
         has_run = False
         while new_monster.health > 0 or has_run:
             selected_action = att_and_run_menu()
